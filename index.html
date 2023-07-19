@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/main.css">
     <title>M.S. Law Associates</title>
 </head>
 <body>
-    <div id="header1" class="h-14 w-full flex items-center justify-between px-28">
-        <div class="inline-flex">+92-42-3729000<div class="ml-8">mslawassociates@live.com</div></div>
-        <div class="inline-flex">Mon - Fri 09:00-17:00<div class="ml-8">fb, insta, twitter, link</div></div>
+    <div id="header1" class="h-14 w-full flex items-center justify-between px-28 text-[#bdbdbd] text-lg font-[Poppins]">
+        <div class="inline-flex"><i class="fa-solid fa-phone mr-3 m-auto"></i>+92-42-3729000<div class="ml-8"><i class="fa-solid fa-envelope mr-3 m-auto"></i>mslawassociates@live.com</div></div>
+        <div class="inline-flex"><i class="fa-solid fa-clock mr-2 m-auto"></i>Mon - Fri 09:00-17:00<div class="ml-8"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-instagram ml-3"></i></a><a href="#"><i class="fa-brands fa-twitter ml-3"></i></a></div></div>
     </div>
-    <div id="header2" class="min-h-screen bg-blue-800 w-full">
-        <div class="h-24 bg-slate-500 flex items-center justify-between px-36">
-            <div>logo</div>
+    <div id="mainbg" class="bg-[#363858] w-full h-screen absolute z-0">
+        <img src="images/bg-1.jpg" class="w-full h-full opacity-60">
+    </div>
+    <div id="header2" class="h-24 w-full font-[Poppins] text-white text-lg relative z-10">
+        <div class="h-24 flex items-center justify-between px-36">
+            <div><img src="images/logo-.png" width="200px"></div>
             <div class="inline-flex gap-10">
-                <div>no1 law firm</div><div>won over 100+</div><div>trusted by 100+</div><div>consultancy button</div>
+                <div class="font-bold"><i class="fa-brands fa-first-order-alt mr-3"></i>One of The<div class="ml-7 font-normal">Top Law Firm</div></div><div class="font-bold"><i class="fa-regular fa-star mr-3"></i>Won over<div class="font-normal ml-8">100+ Cases</div></div><div class="font-bold"><i class="fa-solid fa-globe mr-3"></i>Trusted by <div class="font-normal ml-8">100+ CLients</div></div><div><button class="pr-14 pl-11 py-3 rounded-sm text-center bg-white text-blue-900"><i class="fa-regular fa-comment mr-4"></i>Consult</button></div>
             </div>
         </div>
-        <div id="navbarouter" class="w-full bg-white">
-            <div id="navbarinner" class="w-[83%] bg-blue-950 h-20 m-auto flex items-center justify-between px-10">
-                <ul id="menu" class="inline-flex gap-10">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Practice Area</a></li>
-                </ul>
-                <div id="searchicon">search</div>
-            </div>
+    </div>
+    <div id="navbar" class="w-full h-20 relative z-10">
+        <div id="navbarinner" class="w-[83%] font-bold bg-[rgba(48,51,88,0.9)] text-[rgba(255,255,255,0.7)] text-lg opacity-80 shadow-md h-20 m-auto flex items-center justify-between px-10">
+            <ul id="menu" class="inline-flex gap-10">
+                <li class="hover:text-[#ffffff] transition duration-500"><a href="#">Home</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500"><a href="#">About</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500"><a href="#">Contact</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500"><a href="#">Services</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500"><a href="#">Practice Area</a></li>
+            </ul>
+            <div id="searchicon" class="hover:text-[#ffffff] transition duration-500"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
         </div>
     </div>
 </body>
