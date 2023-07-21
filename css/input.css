@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base{
+    body::-webkit-scrollbar{
+        width: 10px;
+    }
+    body::-webkit-scrollbar-track{
+        background-color: white;
+    }
+    body::-webkit-scrollbar-thumb{
+        background-color: gray;
+        border-radius: 50px;
+        border: 3px solid white;
+    }
+}
+
 @layer utilities {
     #partnersname{
         font-family: 'Playfair Display', serif;
