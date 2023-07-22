@@ -21,7 +21,7 @@
     <div id="mainbg2" class="bg-[#1C1D30] w-full h-screen absolute z-0 hidden">
         <img src="images/bg-5.jpg" class="w-full h-full opacity-20">
     </div>
-    <div id="header2" class="h-24 w-full font-[Poppins] text-white text-[12px] lg:text-[18px] relative z-10">
+    <div id="header2" class="hidden md:block h-24 w-full font-[Poppins] text-white text-[12px] lg:text-[18px] relative z-10">
         <div class="h-24 flex items-center justify-between px-5 xl:px-36">
             <div><img src="images/logo-.png" width="200px"></div>
             <div class="inline-flex gap-10">
@@ -29,16 +29,18 @@
             </div>
         </div>
     </div>
-    <div id="navbar" class="w-full h-[70px] sticky z-20 top-0">
-        <div id="navbarinner" class="w-[83%] font-bold bg-[rgba(48,51,88,0.8)] text-[rgba(255,255,255,0.7)] text-lg h-[70px] m-auto flex items-center justify-between px-10">
-            <ul id="menu" class="inline-flex gap-10">
-                <li class="hover:text-[#ffffff] transition duration-500"><a href="#">Home</a></li>
-                <li class="hover:text-[#ffffff] transition duration-500"><a href="#">About</a></li>
-                <li class="hover:text-[#ffffff] transition duration-500"><a href="#">Contact</a></li>
-                <li class="hover:text-[#ffffff] transition duration-500"><a href="#">Services</a></li>
-                <li class="hover:text-[#ffffff] transition duration-500"><a href="#">Practice Area</a></li>
+    <div id="navbar" class=" w-full h-[70px] sticky z-20 top-0">
+        <div id="navbarinner" class="w-[100%] md:w-[83%] font-bold bg-[rgba(48,51,88,0.8)] text-[rgba(255,255,255,0.7)] text-lg h-[70px] m-auto flex items-center justify-between px-10">
+            <img src="images/logo-.png" width="200px" class="block md:hidden">
+            <ul id="menu" class="md:inline-flex gap-10 bg-[rgba(48,51,88,0.8)] md:bg-transparent max-md:fixed max-md:h-screen max-md:mt-[834px] max-md:w-[50%] max-md:right-0 md:translate-x-0 translate-x-full max-md:transition-all max-md:duration-500">
+                <li class="hover:text-[#ffffff] transition duration-500 max-md:ml-5"><a href="#">Home</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#">About</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#">Contact</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#">Services</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#">Practice Area</a></li>
             </ul>
-            <div id="searchicon" class="hover:text-[#ffffff] transition duration-500"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            <div id="searchicon" class="hover:text-[#ffffff] transition duration-500 hidden md:block"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            <div id="menubtn" class="hover:text-[#ffffff] transition duration-500 block md:hidden"><i class="fa-solid fa-bars"></i></div>
         </div>
     </div>
     <div id="main1" class="relative z-10">
@@ -224,7 +226,7 @@
             <div class="mt-16 ml-14 w-[500px] lg:w-[350px] xl:w-[500px] h-[400px] xl:h-[450px]"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.8914337528655!2d74.31059536960177!3d31.563530541089484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191caa0e20fd1d%3A0x905a26e4f2ecb206!2sSyed%20Mauj%20Darya%20Rd%2C%20Mozang%20Chungi%2C%20Lahore%2C%20Punjab%2054000%2C%20Pakistan!5e0!3m2!1sen!2s!4v1689946352927!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
     </div>
-    <div id="footer" class="w-full min-h-[50vh] bg-[#1d1d1d] flex px-32 relative z-10 max-lg:grid max-lg:grid-cols-2">
+    <div id="footer" class="w-full min-h-[50vh] bg-[#1d1d1d] flex px-14 lg:px-32 relative z-10 max-lg:grid max-lg:grid-cols-2">
         <div class="h-[300px] w-[320px] m-auto">
             <img src="images/logo-.png" class="w-[250px]">
             <p class="font-[Poppins] text-lg text-[#a7a7a7]">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into.</p>
@@ -252,10 +254,11 @@
             </div>
         </div>
     </div>
-    <div id="footer2" class="w-full h-[10vh] bg-[#111111] flex items-center justify-between px-32">
+    <div id="footer2" class="w-full h-[10vh] bg-[#111111] flex items-center justify-between px-14 lg:px-32">
         <p class="font-[Poppins] text-lg text-[#adadad]">Copyright 2023 M.S. Law Associates, All Rights Reserved</p>
         <p class="font-[Poppins] text-lg text-[#858585]"><a href="" class="mr-8">Home</a><a href="" class="mr-8">Cases</a><a href="" class="mr-8">About</a><a href="" class="mr-8">Legal</a><a href="" class="">Privacy & Policy</a></p>
     </div>
+    <div class="hidden max-md:mt-[720px] translate-x-full"></div>
 </body>
 <script type="text/javascript" src="js/scripts.js"></script>
 </html>

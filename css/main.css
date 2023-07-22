@@ -874,6 +874,10 @@ body::-webkit-scrollbar-thumb{
   margin-top: 2rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -978,16 +982,16 @@ body::-webkit-scrollbar-thumb{
   height: 100vh;
 }
 
+.min-h-\[50vh\] {
+  min-height: 50vh;
+}
+
 .min-h-full {
   min-height: 100%;
 }
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[50vh\] {
-  min-height: 50vh;
 }
 
 .w-14 {
@@ -1038,12 +1042,12 @@ body::-webkit-scrollbar-thumb{
   width: 340px;
 }
 
-.w-\[350px\] {
-  width: 350px;
-}
-
 .w-\[50\%\] {
   width: 50%;
+}
+
+.w-\[500px\] {
+  width: 500px;
 }
 
 .w-\[660px\] {
@@ -1056,10 +1060,6 @@ body::-webkit-scrollbar-thumb{
 
 .w-\[80\%\] {
   width: 80%;
-}
-
-.w-\[83\%\] {
-  width: 83%;
 }
 
 .w-\[90px\] {
@@ -1078,12 +1078,13 @@ body::-webkit-scrollbar-thumb{
   width: 100%;
 }
 
-.w-\[500px\] {
-  width: 500px;
-}
-
 .-translate-y-20 {
   --tw-translate-y: -5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-full {
+  --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1233,14 +1234,14 @@ body::-webkit-scrollbar-thumb{
   padding-right: 2.5rem;
 }
 
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
 .px-28 {
   padding-left: 7rem;
   padding-right: 7rem;
-}
-
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
 }
 
 .px-5 {
@@ -1351,6 +1352,14 @@ body::-webkit-scrollbar-thumb{
   font-size: 100px;
 }
 
+.text-\[11px\] {
+  font-size: 11px;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .text-\[14px\] {
   font-size: 14px;
 }
@@ -1384,14 +1393,6 @@ body::-webkit-scrollbar-thumb{
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
-}
-
-.text-\[11px\] {
-  font-size: 11px;
 }
 
 .font-bold {
@@ -1645,6 +1646,93 @@ body::-webkit-scrollbar-thumb{
   }
 }
 
+@media not all and (min-width: 768px) {
+  .max-md\:fixed {
+    position: fixed;
+  }
+
+  .max-md\:right-0 {
+    right: 0px;
+  }
+
+  .max-md\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .max-md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .max-md\:mt-\[834px\] {
+    margin-top: 834px;
+  }
+
+  .max-md\:mt-\[784px\] {
+    margin-top: 784px;
+  }
+
+  .max-md\:mt-\[764px\] {
+    margin-top: 764px;
+  }
+
+  .max-md\:mt-\[740px\] {
+    margin-top: 740px;
+  }
+
+  .max-md\:mt-\[725px\] {
+    margin-top: 725px;
+  }
+
+  .max-md\:mt-\[720px\] {
+    margin-top: 720px;
+  }
+
+  .max-md\:h-screen {
+    height: 100vh;
+  }
+
+  .max-md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .max-md\:transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .max-md\:duration-500 {
+    transition-duration: 500ms;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:inline-flex {
+    display: inline-flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:w-\[83\%\] {
+    width: 83%;
+  }
+
+  .md\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:left-\[50\%\] {
     left: 50%;
@@ -1670,8 +1758,16 @@ body::-webkit-scrollbar-thumb{
     display: flex;
   }
 
+  .lg\:w-\[350px\] {
+    width: 350px;
+  }
+
   .lg\:w-\[400px\] {
     width: 400px;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:w-\[800px\] {
@@ -1686,21 +1782,22 @@ body::-webkit-scrollbar-thumb{
     width: 960px;
   }
 
-  .lg\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .lg\:w-\[350px\] {
-    width: 350px;
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .lg\:py-\[150px\] {
     padding-top: 150px;
     padding-bottom: 150px;
+  }
+
+  .lg\:text-\[14px\] {
+    font-size: 14px;
   }
 
   .lg\:text-\[16px\] {
@@ -1719,18 +1816,9 @@ body::-webkit-scrollbar-thumb{
     font-size: 80px;
   }
 
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-\[14px\] {
-    font-size: 14px;
   }
 }
 
@@ -1779,11 +1867,6 @@ body::-webkit-scrollbar-thumb{
 
   .xl\:pl-24 {
     padding-left: 6rem;
-  }
-
-  .xl\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .xl\:text-\[18px\] {
