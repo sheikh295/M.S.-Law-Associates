@@ -982,6 +982,34 @@ body::-webkit-scrollbar-thumb{
   height: 100vh;
 }
 
+.h-\[770px\] {
+  height: 770px;
+}
+
+.h-\[462px\] {
+  height: 462px;
+}
+
+.h-\[539px\] {
+  height: 539px;
+}
+
+.h-\[270px\] {
+  height: 270px;
+}
+
+.h-\[708px\] {
+  height: 708px;
+}
+
+.h-\[808px\] {
+  height: 808px;
+}
+
+.h-\[1309px\] {
+  height: 1309px;
+}
+
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -994,12 +1022,52 @@ body::-webkit-scrollbar-thumb{
   min-height: 50vh;
 }
 
+.min-h-\[92vh\] {
+  min-height: 92vh;
+}
+
 .min-h-full {
   min-height: 100%;
 }
 
-.min-h-\[92vh\] {
-  min-height: 92vh;
+.min-h-\[708px\] {
+  min-height: 708px;
+}
+
+.min-h-\[770px\] {
+  min-height: 770px;
+}
+
+.min-h-\[385px\] {
+  min-height: 385px;
+}
+
+.min-h-\[77px\] {
+  min-height: 77px;
+}
+
+.min-h-\[850px\] {
+  min-height: 850px;
+}
+
+.min-h-\[730px\] {
+  min-height: 730px;
+}
+
+.min-h-\[700px\] {
+  min-height: 700px;
+}
+
+.min-h-\[650px\] {
+  min-height: 650px;
+}
+
+.min-h-\[600px\] {
+  min-height: 600px;
+}
+
+.min-h-\[750px\] {
+  min-height: 750px;
 }
 
 .w-14 {
@@ -1046,6 +1114,14 @@ body::-webkit-scrollbar-thumb{
   width: 320px;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[450px\] {
+  width: 450px;
+}
+
 .w-\[480px\] {
   width: 480px;
 }
@@ -1056,14 +1132,6 @@ body::-webkit-scrollbar-thumb{
 
 .w-\[500px\] {
   width: 500px;
-}
-
-.w-\[550px\] {
-  width: 550px;
-}
-
-.w-\[600px\] {
-  width: 600px;
 }
 
 .w-\[80\%\] {
@@ -1088,14 +1156,6 @@ body::-webkit-scrollbar-thumb{
 
 .w-full {
   width: 100%;
-}
-
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-\[450px\] {
-  width: 450px;
 }
 
 .-translate-y-20 {
@@ -1345,6 +1405,10 @@ body::-webkit-scrollbar-thumb{
   padding-top: 70px;
 }
 
+.pt-32 {
+  padding-top: 8rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1372,10 +1436,6 @@ body::-webkit-scrollbar-thumb{
   line-height: 2.5rem;
 }
 
-.text-\[100px\] {
-  font-size: 100px;
-}
-
 .text-\[11px\] {
   font-size: 11px;
 }
@@ -1400,6 +1460,10 @@ body::-webkit-scrollbar-thumb{
   font-size: 40px;
 }
 
+.text-\[50px\] {
+  font-size: 50px;
+}
+
 .text-\[80px\] {
   font-size: 80px;
 }
@@ -1417,10 +1481,6 @@ body::-webkit-scrollbar-thumb{
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[50px\] {
-  font-size: 50px;
 }
 
 .font-bold {
@@ -1564,10 +1624,6 @@ body::-webkit-scrollbar-thumb{
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[5-px\] {
-  color: 5-px;
 }
 
 .opacity-20 {
@@ -1719,6 +1775,10 @@ body::-webkit-scrollbar-thumb{
     height: 100vh;
   }
 
+  .max-md\:h-\[770px\] {
+    height: 770px;
+  }
+
   .max-md\:w-\[50\%\] {
     width: 50%;
   }
@@ -1777,20 +1837,20 @@ body::-webkit-scrollbar-thumb{
     display: block;
   }
 
-  .sm\:w-\[600px\] {
-    width: 600px;
-  }
-
-  .sm\:w-\[80\%\] {
-    width: 80%;
+  .sm\:w-\[500px\] {
+    width: 500px;
   }
 
   .sm\:w-\[550px\] {
     width: 550px;
   }
 
-  .sm\:w-\[500px\] {
-    width: 500px;
+  .sm\:w-\[600px\] {
+    width: 600px;
+  }
+
+  .sm\:w-\[80\%\] {
+    width: 80%;
   }
 
   .sm\:grid-cols-2 {
@@ -1863,6 +1923,18 @@ body::-webkit-scrollbar-thumb{
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-\[385px\] {
+    height: 385px;
+  }
+
+  .md\:h-\[731px\] {
+    height: 731px;
+  }
+
+  .md\:h-\[770px\] {
+    height: 770px;
   }
 
   .md\:w-\[300px\] {
@@ -2010,11 +2082,6 @@ body::-webkit-scrollbar-thumb{
 
   .lg\:text-\[80px\] {
     font-size: 80px;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
