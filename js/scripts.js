@@ -95,3 +95,22 @@ function mainslideshow() {
     }
 }
 
+var partnerspics = document.querySelectorAll("#partnerpic1, #partnerpic2, #partnerpic3, #partnerpic4")
+console.log(partnerspics)
+var picnum = "pic1, pic2, pic3"
+document.getElementById('partnerbtnright').addEventListener("click", function(){
+    if (picnum == "pic1, pic2, pic3") {
+        document.getElementById('partnerpic1').className = "hidden"
+        document.getElementById('partnerpic2').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
+        document.getElementById('partnerpic3').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
+        document.getElementById('partnerpic4').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
+        picnum = "pic2, pic3, pic4";
+    }
+    else if (picnum == "pic2, pic3, pic4") {
+        document.getElementById('partnerpic1').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
+        document.getElementById('partnerpic2').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
+        document.getElementById('partnerpic3').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
+        document.getElementById('partnerpic4').className = "hidden"
+        picnum = "pic1, pic2, pic3"
+    }
+});
