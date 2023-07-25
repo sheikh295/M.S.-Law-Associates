@@ -1051,10 +1051,6 @@ body::-webkit-scrollbar-thumb{
   width: 270px;
 }
 
-.w-\[290px\] {
-  width: 290px;
-}
-
 .w-\[50\%\] {
   width: 50%;
 }
@@ -1084,9 +1080,18 @@ body::-webkit-scrollbar-thumb{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-x-\[500\%\] {
+  --tw-translate-x: 500%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-x-full {
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-1 {
@@ -1354,10 +1359,6 @@ body::-webkit-scrollbar-thumb{
   font-size: 30px;
 }
 
-.text-\[80px\] {
-  font-size: 80px;
-}
-
 .text-\[9px\] {
   font-size: 9px;
 }
@@ -1525,8 +1526,8 @@ body::-webkit-scrollbar-thumb{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-20 {
-  opacity: 0.2;
+.opacity-100 {
+  opacity: 1;
 }
 
 .opacity-30 {
