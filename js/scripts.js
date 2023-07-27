@@ -73,44 +73,32 @@ document.getElementById('m1arrowright').addEventListener("click", function (){
         }
 })
 
-setInterval(mainslideshow, 8000)
+setInterval(mainslideshow, 6000)
 
 function mainslideshow() {
     if (pic == "picture 1") {
         console.log('pic 1')
-        document.getElementById('mainbg1').classList.add('hidden')
-        document.getElementById('mainbg2').classList.remove('hidden')
+        document.getElementById('mainbg1').classList.add('invisible')
+        document.getElementById('mainbg1').classList.add('opacity-60')
+        document.getElementById('mainbg2').classList.remove('invisible')
+        document.getElementById('mainbg2').classList.remove('opacity-60')
         document.getElementById('m1content1').classList.add('hidden')
+        document.getElementById('m1content1').classList.add('translate-y-10')
         document.getElementById('m1content2').classList.remove('hidden')
+        document.getElementById('m1content2').classList.remove('translate-y-10')
         pic = "picture 2";
     }
 
     else {
         console.log('pic 2')
-        document.getElementById('mainbg1').classList.remove('hidden')
-        document.getElementById('mainbg2').classList.add('hidden')
+        document.getElementById('mainbg1').classList.remove('invisible')
+        document.getElementById('mainbg1').classList.remove('opacity-60')
+        document.getElementById('mainbg2').classList.add('invisible')
+        document.getElementById('mainbg2').classList.add('opacity-60')
         document.getElementById('m1content1').classList.remove('hidden')
+        document.getElementById('m1content1').classList.remove('translate-y-10')
         document.getElementById('m1content2').classList.add('hidden')
+        document.getElementById('m1content2').classList.add('translate-y-10')
         pic = "picture 1";
     }
 }
-
-var partnerspics = document.querySelectorAll("#partnerpic1, #partnerpic2, #partnerpic3, #partnerpic4")
-console.log(partnerspics)
-var picnum = "pic1, pic2, pic3"
-document.getElementById('partnerbtnright').addEventListener("click", function(){
-    if (picnum == "pic1, pic2, pic3") {
-        document.getElementById('partnerpic1').className = "hidden"
-        document.getElementById('partnerpic2').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
-        document.getElementById('partnerpic3').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
-        document.getElementById('partnerpic4').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
-        picnum = "pic2, pic3, pic4";
-    }
-    else if (picnum == "pic2, pic3, pic4") {
-        document.getElementById('partnerpic1').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
-        document.getElementById('partnerpic2').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
-        document.getElementById('partnerpic3').className = "shadow-xl rounded-md h-[240px] 3xs:h-[280px] 2xs:h-[320px] bg-black overflow-hidden"
-        document.getElementById('partnerpic4').className = "hidden"
-        picnum = "pic1, pic2, pic3"
-    }
-});
