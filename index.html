@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>M.S. Law Associates</title>
 </head>
 <body class="overflow-x-hidden">
@@ -25,7 +26,7 @@
         <div class="h-24 flex items-center justify-between px-5 xl:px-36">
             <div><img src="images/logo-.png" width="200px"></div>
             <div class="inline-flex gap-10">
-                <div class="font-bold"><i class="fa-brands fa-first-order-alt mr-3"></i>One of The<div class="ml-7 font-normal">Top Law Firm</div></div><div class="font-bold"><i class="fa-regular fa-star mr-3"></i>Won over<div class="font-normal ml-8">100+ Cases</div></div><div class="font-bold"><i class="fa-solid fa-globe mr-3"></i>Trusted by <div class="font-normal ml-8">500+ CLients</div></div><div><button class="pr-14 pl-11 py-3 rounded-sm text-center bg-white text-blue-900 hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white transition duration-300"><i class="fa-regular fa-comment mr-4"></i>Consult</button></div>
+                <div class="font-bold"><i class="fa-brands fa-first-order-alt mr-3"></i>One of The<div class="ml-7 font-normal">Top Law Firm</div></div><div class="font-bold"><i class="fa-regular fa-star mr-3"></i>Won over<div class="font-normal ml-8">100+ Cases</div></div><div class="font-bold"><i class="fa-solid fa-globe mr-3"></i>Trusted by <div class="font-normal ml-8">500+ CLients</div></div><div><button onclick="window.location.href='#contactinfo&map'" class="pr-14 pl-11 py-3 rounded-sm text-center bg-white text-blue-900 hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white transition duration-300"><i class="fa-regular fa-comment mr-4"></i>Consult</button></div>
             </div>
         </div>
     </div>
@@ -33,36 +34,36 @@
         <div id="navbarinner" class="w-[100%] md:w-[83%] font-bold bg-[rgba(48,51,88,0.8)] text-[rgba(255,255,255,0.7)] text-lg h-[70px] m-auto flex items-center justify-between px-10">
             <img src="images/logo-.png" width="200px" class="block md:hidden">
             <ul id="menu" class="md:inline-flex gap-10 bg-[rgba(48,51,88,0.8)] md:bg-transparent max-md:fixed max-md:h-[770px] max-md:mt-[834px] max-md:w-[50%] max-md:right-0 md:translate-x-0 translate-x-full max-md:transition-all max-md:duration-500">
-                <li class="hover:text-[#ffffff] transition duration-500 max-md:ml-5"><a href="#">Home</a></li>
-                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#">About</a></li>
-                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#">Contact</a></li>
-                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#">Services</a></li>
-                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#">Practice Area</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500 max-md:ml-5"><a href="#home">Home</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#about">About</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#practiceareas">Practice Areas</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#associates">Associates</a></li>
+                <li class="hover:text-[#ffffff] transition duration-500 max-md:mt-5 max-md:ml-5"><a href="#contact">Contact Us</a></li>
             </ul>
             <div id="searchicon" class="hover:text-[#ffffff] transition duration-500 hidden md:block"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
             <div id="menubtn" class="hover:text-[#ffffff] transition duration-500 block md:hidden"><i class="fa-solid fa-bars"></i></div>
         </div>
     </div>
-    <div id="main1" class="relative z-10">
+    <div id="home" class="relative z-10">
         <div id="m1arrowleft" class="absolute left-5 text-white text-4xl top-28 max-xs:hidden cursor-pointer"><i class="fa-solid fa-chevron-left"></i></div>
         <div id="m1arrowright" class="absolute right-5 text-white text-4xl top-28 max-xs:hidden cursor-pointer"><i class="fa-solid fa-chevron-right"></i></div>
         <div id="m1contents" class="w-[270px] 3xs:w-[290px] 2xs:w-[390px] xs:w-[480px] sm:w-[600px] md:w-[700px] lg:w-[960px] xl:w-[1200px] h-[462px] m-auto mt-20 pt-24">
             <div id="m1content1" class="max-xs:text-center transition-all duration-300">
-                <div class="text-[30px] 2xs:text-[35px] xs:text-[40px] md:text-[60px] lg:text-[80px] font-bold font-serif text-white">M.S. Law Associates</div>
-                <div class="w-20 h-1 bg-white rounded-xl max-xs:m-auto"></div>
-                <div class="mt-10 text-sm 2xs:text-lg text-white font-[Poppins]">We are a leading law firm with more than 20 years of experience</div>
-                <div class="text-sm mt-10 text-blue-950 font-bold"><button class="py-4 pl-8 pr-5 bg-white rounded-md hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white transition duration-300">CONTACT NOW<i class="fa-solid fa-arrow-right fa-fade ml-2"></i></button></div>
+                <div data-aos="fade-down" class="text-[30px] 2xs:text-[35px] xs:text-[40px] md:text-[60px] lg:text-[80px] font-bold font-serif text-white">M.S. Law Associates</div>
+                <div data-aos="fade-down" class="w-20 h-1 bg-white rounded-xl max-xs:m-auto"></div>
+                <div data-aos="fade-down" class="mt-10 text-sm 2xs:text-lg text-white font-[Poppins]">We are a leading law firm with more than 20 years of experience</div>
+                <div class="text-sm mt-10 text-blue-950 font-bold"><button onclick="window.location.href='#contact'" class="py-4 pl-8 pr-5 bg-white rounded-md hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white transition duration-300">CONTACT NOW<i class="fa-solid fa-arrow-right fa-fade ml-2"></i></button></div>
             </div>
-            <div id="m1content2" class="max-xs:text-center hidden translate-y-10 transition-all duration-300">
-                <div class="text-[30px] 2xs:text-[35px] xs:text-[40px] md:text-[60px] lg:text-[80px] font-bold font-serif text-white">Professional Law Firm</div>
-                <div class="w-20 h-1 bg-white rounded-xl max-xs:m-auto"></div>
-                <div class="mt-10 text-sm 2xs:text-lg text-white font-[Poppins]">We are a leading law firm with more than 20 years of experience</div>
-                <div class="text-sm mt-10 text-blue-950 font-bold"><button class="py-4 pl-8 pr-5 bg-white rounded-md hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white transition duration-300">CONTACT NOW<i class="fa-solid fa-arrow-right fa-fade ml-2"></i></button></div>
+            <div id="m1content2" class="max-xs:text-center hidden transition-all duration-300">
+                <div data-aos="fade-down" class="text-[30px] 2xs:text-[35px] xs:text-[40px] md:text-[60px] lg:text-[80px] font-bold font-serif text-white">Professional Law Firm</div>
+                <div data-aos="fade-down" class="w-20 h-1 bg-white rounded-xl max-xs:m-auto"></div>
+                <div data-aos="fade-down" class="mt-10 text-sm 2xs:text-lg text-white font-[Poppins]">We are a leading law firm with more than 20 years of experience</div>
+                <div class="text-sm mt-10 text-blue-950 font-bold"><button onclick="window.location.href='#contact'" class="py-4 pl-8 pr-5 bg-white rounded-md hover:bg-transparent hover:border-[1px] hover:border-white hover:text-white transition duration-300">CONTACT NOW<i class="fa-solid fa-arrow-right fa-fade ml-2"></i></button></div>
             </div>
         </div>
     </div>
     <div id="about" class="h-[450px] xs:h-[539px] md:h-[385px] md:flex items-center w-[250px] 3xs:w-[290px] 2xs:w-[380px] xs:w-[500px] sm:w-[600px] md:w-[700px] lg:w-[960px] xl:w-[1200px] bg-[#3C3E6B] m-auto relative z-10 rounded-md">
-        <div class="md:w-[50%] md:h-full">
+        <div class="md:w-[50%] md:h-full" data-aos="fade-up">
             <div class="font-serif text-2xl font-bold text-white pt-10 max-2xs:text-center 2xs:pl-14">About M.S. Law Associates</div>
             <div class="w-[95%] sm:w-[80%] max-2xs:text-center max-2xs:m-auto 2xs:pl-14 text-[16px] md:text-[14px] lg:text-[16px] font-[Poppins] text-[rgba(255,255,255,0.5)]"><p class="mt-7">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p></div>
             <div></div>
@@ -78,44 +79,44 @@
         </div>
         <div id="practicegrid" class="grid grid-cols-1 xs:grid-cols-2 xl:grid-cols-3 gap-10 mt-20">
             <div class="bg-white h-[400px] shadow-2xl rounded-lg text-center p-5 md:p-12 hover:-mt-5 transition-all duration-300">
-                <div class=""><img src="images/practice-area-1.png" class="m-auto"></div>
-                <p class="font-serif text-2xl mt-8">Taxation Law</p>
-                <p class="text-[#868686] font-[Poppins] text-[16px] mt-8">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
-                <p class="text-[#AB968A] font-[Poppins] text-sm font-bold mt-8"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
+                <div class=""><img src="images/practice-area-1.png" class="m-auto" data-aos="fade-down"></div>
+                <p class="font-serif text-2xl mt-8" data-aos="fade-down">Taxation Law</p>
+                <p class="text-[#868686] font-[Poppins] text-[16px] mt-8" data-aos="fade-down">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
+                <p class="text-[#AB968A] font-[Poppins] text-sm font-bold mt-8" data-aos="fade-down"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
             </div>
             <div class="bg-[#3C3E6B] h-[400px] shadow-2xl rounded-lg text-center p-5 md:p-12 hover:-mt-5 transition-all duration-300">
-                <div class=""><img src="images/practice-area-2.png" class="m-auto"></div>
-                <p class="font-serif text-2xl mt-8 text-white">Corporate Law</p>
-                <p class="text-[#B5B8DE] font-[Poppins] text-[16px] mt-8">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
-                <p class="text-white font-[Poppins] text-sm font-bold mt-8"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
+                <div class=""><img src="images/practice-area-2.png" class="m-auto" data-aos="fade-down"></div>
+                <p class="font-serif text-2xl mt-8 text-white" data-aos="fade-down">Corporate Law</p>
+                <p class="text-[#B5B8DE] font-[Poppins] text-[16px] mt-8" data-aos="fade-down">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
+                <p class="text-white font-[Poppins] text-sm font-bold mt-8" data-aos="fade-down"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
             </div>
             <div class="bg-white h-[400px] shadow-2xl rounded-lg text-center p-5 md:p-12 hover:-mt-5 transition-all duration-300">
-                <div class=""><img src="images/practice-area-3.png" class="m-auto"></div>
-                <p class="font-serif text-2xl mt-8">Family Law</p>
-                <p class="text-[#868686] font-[Poppins] text-[16px] mt-8">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
-                <p class="text-[#AB968A] font-[Poppins] text-sm font-bold mt-8"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
+                <div class=""><img src="images/practice-area-3.png" class="m-auto" data-aos="fade-down"></div>
+                <p class="font-serif text-2xl mt-8" data-aos="fade-down">Family Law</p>
+                <p class="text-[#868686] font-[Poppins] text-[16px] mt-8" data-aos="fade-down">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
+                <p class="text-[#AB968A] font-[Poppins] text-sm font-bold mt-8" data-aos="fade-down"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
             </div>
             <div class="bg-[#3C3E6B] h-[400px] shadow-2xl rounded-lg text-center p-5 md:p-12 hover:-mt-5 transition-all duration-300">
-                <div class=""><img src="images/practice-area-4.png" class="m-auto"></div>
-                <p class="text-white font-serif text-2xl mt-8">Civil Law</p>
-                <p class="text-[#B5B8DE] font-[Poppins] text-[16px] mt-8">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
-                <p class="text-white font-[Poppins] text-sm font-bold mt-8"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
+                <div class=""><img src="images/practice-area-4.png" class="m-auto" data-aos="fade-down"></div>
+                <p class="text-white font-serif text-2xl mt-8" data-aos="fade-down">Civil Law</p>
+                <p class="text-[#B5B8DE] font-[Poppins] text-[16px] mt-8" data-aos="fade-down">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
+                <p class="text-white font-[Poppins] text-sm font-bold mt-8" data-aos="fade-down"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
             </div>
             <div class="bg-white h-[400px] shadow-2xl rounded-lg text-center p-5 md:p-12 hover:-mt-5 transition-all duration-300">
-                <div class=""><img src="images/practice-area-5.png" class="m-auto"></div>
-                <p class="font-serif text-2xl mt-8">Taxation Law</p>
-                <p class="text-[#868686] font-[Poppins] text-[16px] mt-8">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
-                <p class="text-[#AB968A] font-[Poppins] text-sm font-bold mt-8"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
+                <div class=""><img src="images/practice-area-5.png" class="m-auto" data-aos="fade-down"></div>
+                <p class="font-serif text-2xl mt-8" data-aos="fade-down">Criminal Law</p>
+                <p class="text-[#868686] font-[Poppins] text-[16px] mt-8" data-aos="fade-down">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
+                <p class="text-[#AB968A] font-[Poppins] text-sm font-bold mt-8" data-aos="fade-down"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
             </div>
             <div class="bg-[#3C3E6B] h-[400px] shadow-2xl rounded-lg text-center p-5 md:p-12 hover:-mt-5 transition-all duration-300">
-                <div class=""><img src="images/practice-area-6.png" class="m-auto"></div>
-                <p class="text-white font-serif text-2xl mt-8">Taxation Law</p>
-                <p class="text-[#B5B8DE] font-[Poppins] text-[16px] mt-8">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
-                <p class="text-white font-[Poppins] text-sm font-bold mt-8"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
+                <div class=""><img src="images/practice-area-6.png" class="m-auto" data-aos="fade-down"></div>
+                <p class="text-white font-serif text-2xl mt-8" data-aos="fade-down">Customs Law</p>
+                <p class="text-[#B5B8DE] font-[Poppins] text-[16px] mt-8" data-aos="fade-down">We can provide corporate governance, helping clients manage the responsibilities of running a corporation in financial field.</p>
+                <p class="text-white font-[Poppins] text-sm font-bold mt-8" data-aos="fade-down"><a href="">LEARN MORE<i class="fa-solid fa-arrow-right ml-2"></i></a></p>
             </div>
         </div>
     </div>
-    <div id="associates" class="w-full m-auto bg-[#f3f3f3]">
+    <div id="associates" class="w-full m-auto bg-[#f3f3f3]"  data-aos="fade">
         <div class="text-center pt-16">
             <div class="text-black text-4xl font-serif">Associates</div>
             <div class="text-[#7e7e7e] text-sm font-bold font-[Poppins] mt-3"><a href="">VIEW ALL THE PEOPLE<i class="fa-solid fa-arrow-right ml-2"></i></a></div>
@@ -157,8 +158,8 @@
                 <div class="w-14 h-[2px] bg-white m-auto mt-10"></div>
                 <div class="text-[100px] xs:text-[50px] sm:text-[100px] text-white m-auto mt-5"><i class="fa-solid fa-quote-left"></i></div>
                 <p class="text-[#C8CAF6] italic mt-3 text-[20px] 2xs:text-[22px] xs:text-[16px] lg:text-[20px] w-[90%] m-auto">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary,</p>
-                <p class="playfairfont text-white text-lg mt-8">Maqsood Ahmed</p>
-                <p class="text-[#C8CAF6] font-[Poppins] mt-2">Manager Subway, Thokar, Lahore</p>
+                <p class="playfairfont text-white text-lg mt-8">Sheikh Arif Iqbal</p>
+                <p class="text-[#C8CAF6] font-[Poppins] mt-2">CEO</br>HI Profile International</p>
             </div>
         </div>
     </div>
@@ -197,8 +198,8 @@
         </div>
     </div> -->
     <div id="clientchoose" class="w-full h-[1309px] md:h-[770px] md:flex">
-        <img src="images/clientchose.png" class="w-[250px] 2xs:w-[350px] xs:w-[400px] sm:w-[500px] md:w-[300px] lg:w-[400px] xl:w-[500px] py-[170px] lg:py-[150px] xl:py-[100px] ml-10 lg:ml-14 xl:ml-44 max-md:m-auto max-md:mt-[-200px]">
-        <div class="ml-10 lg:ml-14 xl:ml-20 max-md:translate-y-[-100px] md:mt-36 w-[250px] 2xs:w-[380px] xs:w-[450px] sm:w-[500px] md:w-[340px] lg:w-[400px] max-md:m-auto">
+        <img  data-aos="fade-right" src="images/clientchose.png" class="w-[250px] 2xs:w-[350px] xs:w-[400px] sm:w-[500px] md:w-[300px] lg:w-[400px] xl:w-[500px] py-[170px] lg:py-[150px] xl:py-[100px] ml-10 lg:ml-14 xl:ml-44 max-md:m-auto max-md:mt-[-200px]">
+        <div  data-aos="fade-left" class="ml-10 lg:ml-14 xl:ml-20 max-md:translate-y-[-100px] md:mt-36 w-[250px] 2xs:w-[380px] xs:w-[450px] sm:w-[500px] md:w-[340px] lg:w-[400px] max-md:m-auto">
             <p class="text-[#bbbbbb] text-[16px] font-bold font-[Poppins]">WHAT WE ARE EXPERT AT</p>
             <p class="text-black text-[30px] lg:text-[36px] mt-3 playfairfont">Why Clients Choose Us</p>
             <p class="bg-[#AA8D70] h-[2px] w-14 mt-8"></p>
@@ -261,4 +262,11 @@
     <div class="hidden max-md:mt-[720px] translate-x-full"></div>
 </body>
 <script type="text/javascript" src="js/scripts.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 100,
+    duration: 700,
+  });
+</script>
 </html>

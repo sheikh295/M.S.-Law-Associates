@@ -37,8 +37,10 @@ var pic = "picture 1"
 document.getElementById('m1arrowleft').addEventListener("click", function (){
     if (pic == "picture 1") {
         console.log('pic 1')
-        document.getElementById('mainbg1').classList.add('hidden')
-        document.getElementById('mainbg2').classList.remove('hidden')
+        document.getElementById('mainbg1').classList.add('invisible')
+        document.getElementById('mainbg1').classList.add('opacity-60')
+        document.getElementById('mainbg2').classList.remove('invisible')
+        document.getElementById('mainbg2').classList.remove('opacity-60')
         document.getElementById('m1content1').classList.add('hidden')
         document.getElementById('m1content2').classList.remove('hidden')
         pic = "picture 2";
@@ -46,8 +48,10 @@ document.getElementById('m1arrowleft').addEventListener("click", function (){
 
     else {
         console.log('pic 2')
-        document.getElementById('mainbg1').classList.remove('hidden')
-        document.getElementById('mainbg2').classList.add('hidden')
+        document.getElementById('mainbg1').classList.remove('invisible')
+        document.getElementById('mainbg1').classList.remove('opacity-60')
+        document.getElementById('mainbg2').classList.add('invisible')
+        document.getElementById('mainbg2').classList.add('opacity-60')
         document.getElementById('m1content1').classList.remove('hidden')
         document.getElementById('m1content2').classList.add('hidden')
         pic = "picture 1";
@@ -56,8 +60,10 @@ document.getElementById('m1arrowleft').addEventListener("click", function (){
 document.getElementById('m1arrowright').addEventListener("click", function (){
         if (pic == "picture 1") {
             console.log('pic 1')
-            document.getElementById('mainbg1').classList.add('hidden')
-            document.getElementById('mainbg2').classList.remove('hidden')
+            document.getElementById('mainbg1').classList.add('invisible')
+            document.getElementById('mainbg1').classList.add('opacity-60')
+            document.getElementById('mainbg2').classList.remove('invisible')
+            document.getElementById('mainbg2').classList.remove('opacity-60')
             document.getElementById('m1content1').classList.add('hidden')
             document.getElementById('m1content2').classList.remove('hidden')
             pic = "picture 2";
@@ -65,8 +71,10 @@ document.getElementById('m1arrowright').addEventListener("click", function (){
     
         else {
             console.log('pic 2')
-            document.getElementById('mainbg1').classList.remove('hidden')
-            document.getElementById('mainbg2').classList.add('hidden')
+            document.getElementById('mainbg1').classList.remove('invisible')
+            document.getElementById('mainbg1').classList.remove('opacity-60')
+            document.getElementById('mainbg2').classList.add('invisible')
+            document.getElementById('mainbg2').classList.add('opacity-60')
             document.getElementById('m1content1').classList.remove('hidden')
             document.getElementById('m1content2').classList.add('hidden')
             pic = "picture 1";
@@ -83,9 +91,7 @@ function mainslideshow() {
         document.getElementById('mainbg2').classList.remove('invisible')
         document.getElementById('mainbg2').classList.remove('opacity-60')
         document.getElementById('m1content1').classList.add('hidden')
-        document.getElementById('m1content1').classList.add('translate-y-10')
         document.getElementById('m1content2').classList.remove('hidden')
-        document.getElementById('m1content2').classList.remove('translate-y-10')
         pic = "picture 2";
     }
 
@@ -96,9 +102,7 @@ function mainslideshow() {
         document.getElementById('mainbg2').classList.add('invisible')
         document.getElementById('mainbg2').classList.add('opacity-60')
         document.getElementById('m1content1').classList.remove('hidden')
-        document.getElementById('m1content1').classList.remove('translate-y-10')
         document.getElementById('m1content2').classList.add('hidden')
-        document.getElementById('m1content2').classList.add('translate-y-10')
         pic = "picture 1";
     }
 }
